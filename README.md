@@ -1,3 +1,2 @@
 # tech4_brent_price
-Brent Prediction 
-Pos Tech Project - (Tech Challenge 4)
+Esse repositório contém o projeto do Tech4 da Postech FIAP (Data Analytics) sobre modelo de predição do petróleo barril tipo Brent
