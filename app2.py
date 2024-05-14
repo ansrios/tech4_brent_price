@@ -351,13 +351,13 @@ limit_day_pred = brent[brent['ds'] > limit_day]
 
 model = joblib.load('modelo/gbr_ml_v5.joblib')
 
-forecast_gbr = model.predict( h=15, level=[90])
+forecast_gbr = model.predict( h=15, level=[90], new_df=limit_day_pred)
 
 # Random Forest Regressor
 
 model_rf = joblib.load('modelo/rf_ml_v5.joblib')
 
-forecast_rf = model_rf.predict(h=15, level=[90, 95])
+forecast_rf = model_rf.predict(h=15, level=[90], new_df=limit_day_pred)
 
 fig_prev = go.Figure()
 
