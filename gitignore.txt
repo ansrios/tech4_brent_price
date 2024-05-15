@@ -1,7 +1,0 @@
-./venv
-./venv1
-./venv2
-./venv3
-brent_bkp.csv
-__pycache__
-fluxo_tech4.pptx
