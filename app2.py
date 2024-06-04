@@ -150,7 +150,7 @@ with aba1:
         """ 
             - Os dados para o estudo preliminar compreendem o histórico de 2009 até 2024. A principio esse período justifica-se para buscarmos entender as oscilações ciclicas dos cenários ao longo do tempo com volume de dados relevante. Observa-se no periodo eventos turbulentos no ambiente interno e externo (politica, macroeconomia, pandemia, guerras).
             - Para a captura dos dados, utilizamos a biblioteca 'yfinance' do Python que nos conecta de forma on-line à base de dados da cotação do Brent.
-            - O preço do petróleo é altamente influenciado pelas decisões sobre controle da produção globla da OPEP (Organização dos Países Exportadores de Petróleo), que tem como missão declarada "coordenar e unificar as políticas de petróleo de seus países membros e garantir a estabilização dos mercados de petróleo, a fim de garantir um fornecimento eficiente, econômico e regular deste recurso aos consumidores, uma renda estável aos produtores e um retorno justo de capital para aqueles que investem na indústria petrolífera".
+            - O preço do petróleo é altamente influenciado pelas decisões sobre controle da produção global da OPEP (Organização dos Países Exportadores de Petróleo), que tem como missão declarada "coordenar e unificar as políticas de petróleo de seus países membros e garantir a estabilização dos mercados de petróleo, a fim de garantir um fornecimento eficiente, econômico e regular deste recurso aos consumidores, uma renda estável aos produtores e um retorno justo de capital para aqueles que investem na indústria petrolífera".
         """
         st.plotly_chart(fig_evolucao, use_container_width= True)
 
