@@ -493,7 +493,7 @@ with aba4:
 
 
         # Plotando um gráfico de linha para mostrar a tendência do valor do Brent Futuro desde a data atual até a data selecionada
-        forecast_till_selected_date = forecast_gbr[(forecast_gbr['ds'] >= today) & (forecast_gbr['ds'] <= selected_date)]
+        forecast_till_selected_date = forecast_gbr[(forecast_gbr['ds'] >= 2024-01-01) & (forecast_gbr['ds'] <= selected_date)]
         fig_trend = go.Figure(data=[go.Scatter(x=forecast_till_selected_date['ds'], y=forecast_till_selected_date['GradientBoostingRegressor'], mode='lines')])
         fig_trend.update_layout(title='Tendência do Valor do Brent Futuro',
                                 xaxis_title='Data',
@@ -520,7 +520,7 @@ with aba4:
 
         
         # Plotando um gráfico de linha para mostrar a tendência do valor do Brent Futuro desde a data atual até a data selecionada
-        forecast_till_selected_date_rf = forecast_rf[(forecast_rf['ds'] >= today) & (forecast_rf['ds'] <= selected_date)]
+        forecast_till_selected_date_rf = forecast_rf[(forecast_rf['ds'] >= 2024-01-01) & (forecast_rf['ds'] <= selected_date)]
         fig_trend_rf = go.Figure(data=[go.Scatter(x=forecast_till_selected_date_rf['ds'], y=forecast_till_selected_date_rf['RandomForestRegressor'], mode='lines')])
         fig_trend_rf.update_layout(title='Tendência do Valor do Brent Futuro',
                                 xaxis_title='Data',
